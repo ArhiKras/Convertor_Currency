@@ -91,7 +91,7 @@ def currency_conversion_interface():
         print(f"Ошибка: {error}")
     else:
         print(f"\nРезультат конвертации:")
-        print(f"{amount:.2f} {base_currency} = {converted_amount:.2f} {target_currency}")
+        print(f"{amount:.2f} {base_currency} = {converted_amount:.4f} {target_currency}")
 
         # Показать обратный курс
         reverse_rate, _ = get_exchange_rate(target_currency, base_currency)
